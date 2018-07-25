@@ -1,0 +1,316 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  position: relative;
+}
+html,body{
+  width: 100%;
+  height:100%;
+}
+.wrapper{
+  width:100%;
+  height:100%;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+li{
+  list-style: none;
+  font-size: 18px;
+}
+.u-cf:after{
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+header{
+  position: fixed;
+  width:100%;
+  top:0;
+  left:0;
+  background-color: #222;
+  z-index:100;
+}
+#logo{
+  width:80px;
+  height:45px;
+  background-color: #999;
+  float: left;
+}
+.container{
+  width:85%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.col-1-2,.col-1-3{
+  float:left;
+}
+.col-1-2{
+  width:50%;
+}
+.col-1-3{
+  width:33.333%;
+}
+.nav{
+  float:right;
+}
+.nav li{
+  float:left;
+}
+.nav li a{
+  display: block;
+  padding:10px 12px;
+}
+
+.Homepage{
+  width:100%;
+  height:100vh;
+  background-image: url("../images/home_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding-top:350px;
+}
+.Homepage:before{
+  content: '';
+  display: block;
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color:rgba(0,0,0,0.6)
+}
+.Homepage .content{
+  text-align: center;
+  color:#fff;
+}
+.Homepage .content h1{
+  font-size: 60px;
+  letter-spacing: 6px;
+  font-weight: normal;
+}
+.links ul{
+  display: inline-block;
+}
+.social_icons li{
+  padding:8px 12px;
+  display: inline-block;
+  float:left;
+  font-size: 32px;
+}
+.About{
+  padding:100px 0;
+  color:#333;
+  background-color: #fff;
+}
+.About .col-1-2{
+  padding:0 15px;
+}
+.About .self_image{
+  width:100%;
+  padding-top: 66.666%;
+  background-color: #999;
+}
+.About > .container >h1{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.About  .col-1-2 h2{
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.About .col-1-2 p{
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+.About .col-1-2 li{
+padding-bottom: 12px;
+}
+.About .col-1-2 a{
+  color:#222;
+  margin-top: 36px;
+  display: inline-block;
+  padding: 12px 24px;
+  margin-right: 8px;
+  border: 1px solid #222;
+  border-radius:8px;
+  transition: all .2s ;
+}
+.About .col-1-2 a:hover{
+  background-color: #222;
+  color:#fff;
+}
+
+.Service{
+  background-color: #F9F9F9;
+  padding:100px 0 150px 0 ;
+}
+.Service > .container >h1{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 100px;
+}
+.Service .col-1-3{
+  padding:0px 24px;
+}
+.Service .col-1-3 i{
+  font-size: 36px;
+  padding-bottom: 15px;
+}
+.Service .col-1-3 h2{
+  padding-bottom: 12px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.Service .col-1-3 p{
+  font-weight: 300;
+}
+.Resume{
+  padding:100px 0 150px 0;
+  background-color: #fff;
+}
+.Resume .container h1{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.Resume .years{
+  display: inline-block;
+  background-color: #222;
+  padding:8px;
+  font-size: 12px;
+  color:#fff;
+}
+
+.List h2{
+  padding-bottom: 12px;
+}
+.List .col-1-2 h3{
+  padding-top: 8px;
+}
+.List .col-1-2 h4{
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 8px;
+}
+.List p{
+  font-weight: 300;
+}
+.line{
+  width:100%;
+  height:1px;
+  background-color: #222;
+  margin: 30px 0;
+}
+.Quote{
+  width:100%;
+  height:30vh;
+  background-image: url('../images/quote.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.Quote:before{
+  content: '';
+  display: block;
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color:rgba(0,0,0,0.3)
+}
+.Quote .content{
+  text-align: center;
+  color:#fff;
+  padding-top: 80px;
+}
+.Quote h1{
+  font-size: 28px;
+  letter-spacing: 4px;
+
+}
+.Quote h2{
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  padding-bottom: 24px;
+}
+.Quote a{
+  display: inline-block;
+  border-radius: 8px;
+  margin:8px;
+  padding: 8px 36px;
+  border: 1px solid #fff;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 4px;
+  transition: all .2s;
+}
+.Quote a:hover{
+  background-color: #fff;
+  color:#222;
+}
+.Mywork{
+  padding:100px 0 150px 0;
+  background-color: #f9f9f9;
+}
+.Mywork .container h1{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.Mywork .col-1-3{
+  padding: 16px 24px;
+}
+.work{
+  width:100%;
+  padding-top: 100%;
+  background-color: #222;
+}
+
+.Contact{
+  padding: 100px 0 150px 0;
+  background-color: #fff;
+}
+.Contact .container{
+  width:65%;
+  max-width:870px;
+}
+.Contact > .container > h1{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.Contact .col-1-2,.col-1-1{
+  padding: 0 24px;
+}
+.forms{
+  width:100%;
+  padding:18px 0
+}
+.form-style{
+  width: 100%;
+  border: none;
+  text-transform: capitalize;
+  border-bottom: 1px solid #222;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  outline: none;
+}
+footer{
+  background-color: #222;
+  color:#fff;
+  padding: 50px 0;
+}
+footer .content{
+  text-align: center;
+}
